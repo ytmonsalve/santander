@@ -41,14 +41,15 @@
         <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:50px">
             <h2 class="w3-center"> Interesting Facts</h2>
             <!-- Chicamocha Canyon Interesting Fact-->
-            <div class="w3-container w3-content w3-padding-16 w3-white w3-border" id="chicamocha">
-                <h2 class="w3-wide w3-center">Chicamocha Canyon</h2>
+            <div class="mySlides w3-container w3-content w3-padding-16 w3-white w3-border" id="chicamocha">
+                <h3 class="w3-wide w3-center"><b>Did you know the Chicamocha Canyon is the second largest worldwide?</b></h3>
                 <div class="w3-display-container w3-center">
+                    <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                     <div class="w3-content" style="max-width:700px; margin-top:30px">
                         <img src="imgs/chicamocha3.jpg" alt="" style="width:100%">
                     </div>
                 </div> 
-                <h3 class="w3-center"> <b>Did you know the Chicamocha Canyon is the second largest worldwide?</b></h3>
                 <p class="w3-justify w3-center w3-text-black"> 
                     With a maximum depth of 6,600 ft, an area of 270,000 acres, and a length of 141 mi. It is a major tourist attraction
                     approximately 34 mi from the capital of Santander.
@@ -56,14 +57,15 @@
             </div>
 
             <!-- Bucaramanga Interesting Fact-->
-            <div class="w3-container w3-content w3-padding-16 w3-pale-yellow w3-border" id="capital">
-                <h2 class="w3-wide w3-center">Bucaramanga</h2>
+            <div class="mySlides w3-container w3-content w3-padding-16 w3-pale-yellow w3-border" id="capital">
+                <h3 class="w3-wide w3-center"><b>Did you know Bucaramanga is the capital of Santander?</b></h3>
                     <div class="w3-display-container w3-center">
+                        <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                         <div class="w3-content" style="max-width:700px; margin-top:30px">
                             <img src="imgs/bucaramanga3.jpg" alt="" style="width:100%">
                         </div>
                     </div>
-                    <h3 class="w3-center"> <b>Did you know Bucaramanga is the capital of Santander?</b></h3>
                     <p class="w3-justify w3-center w3-text-black"> Bucaramanga has the 
                         fifth-largest economy in Colombia, and is the ninth most populous city in the country. Bucaramanga has been given the 
                         nickname of "The City of Parks" since it has over 160 parks throughout the city.
@@ -71,14 +73,15 @@
             </div>
 
             <!-- Colombian Coffee Interesting Fact-->
-            <div class="w3-container w3-content w3-padding-16 w3-white w3-border" id="coffee">
-                <h2 class="w3-wide w3-center">Coffee</h2>
+            <div class="mySlides w3-container w3-content w3-padding-16 w3-white w3-border" id="coffee">
+                <h3 class="w3-wide w3-center"><b>Did you know Colombia exports approximately 12.4 million 60-kg bags of coffee a year?</b></h3>
                     <div class="w3-display-container w3-center">
+                        <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                         <div class="w3-content" style="max-width:700px; margin-top:30px">
                             <img src="imgs/coffee.jpg" alt="" style="width:100%">
                         </div>
                     </div>
-                    <h3 class="w3-center"> <b>Did you know Colombia is known for its delicious coffee?</b></h3>
                     <p class="w3-justify w3-center w3-text-black"> Colombia has a perfect combination of 
                         soil, weather, and hand-picked coffee beans that makes their coffee have a unique flavor. The region of Santander has a famous coffee farm 
                         in Mesa de Los Santos called Hacienda el Roble. You can taste some of the 72 coffee varieties, and enjoy a-bird friendly coffee safari with over 170 bird 
@@ -87,14 +90,15 @@
             </div>
 
             <!-- Santander Name Interesting Fact-->
-            <div class="w3-container w3-content w3-padding-16 w3-pale-yellow w3-border" id="francisco">
-                <h2 class="w3-wide w3-center">Francisco de Paula Santander</h2>
+            <div class="mySlides w3-container w3-content w3-padding-16 w3-pale-yellow w3-border" id="francisco">
+                <h3 class="w3-wide w3-center"><b>Did you know Santander was named after Francisco de Paula Santander?</b></h3>
                     <div class="w3-display-container w3-center">
+                        <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                        <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
                         <div class="w3-content" style="max-width:700px; margin-top:30px">
                             <img src="imgs/francisco.jpg" alt="" style="width:100%">
                         </div>
                     </div>
-                    <h3 class="w3-center"> <b>Did you know Santander is named after Francisco de Paula Santander?</b></h3>
                     <p class="w3-justify w3-center w3-text-black"> Soldier and statesman Francisco de Paula 
                         Santander fought beside Simon Bolivar in the war for South American independence. He served as presiedent of Colombia from 1833 to 1837. Santander was an
                         able statesman, he was known for his democratic republican principles and efficient procedures.
@@ -107,5 +111,25 @@
             <p class="w3-medium">Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
         </footer>
 
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+            }  
+        </script>
+   
 	</body>
 </html>
